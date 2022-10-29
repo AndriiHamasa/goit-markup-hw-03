@@ -27,10 +27,39 @@ body{
      margin: -1px;
    }
 
+   /*=========
+   Reset start
+   ===========*/
+   h1, h2, h3, p, ul{
+    padding: 0;
+    margin: 0;
+   }
+   /*=========
+   Reset end
+   ===========*/
+   .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+    background-color: tomato;
+    margin: 0 auto;
+   }
+
 /*-------HEADER-------*/
 
 .pole-header{
     background-color: var(--primary-bcg-color);
+}
+.container-header{
+    display: flex;
+    align-items: baseline;
+    gap: 344px;  
+}
+.nav-header{
+    display: flex;
+    align-items: baseline;
+    gap: 93px;
 }
 .logo-header{
     color: var(--accent-color);
@@ -46,11 +75,23 @@ body{
 .logo-span{
     color: var(--logo-black-color);
 }
+.list{
+    display: flex;
+    gap: 50px;
+    
+    margin: 0;
+}
+.header-item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 /*-------navigation to pages-------*/
 
 .nav-item{
     color: var(--primary-title-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .streaming-page{
     color: var(--accent-color);
@@ -74,16 +115,27 @@ body{
 
 .contact-item{
     color: var(--primary-text-color);
+    
 }
 
 /*--------MAIN--------*/
 /*----hero----*/
 
+.container-hero{
+    padding-top: 200px;
+    height: 600px;
+}
 .hero-page{
     background-color: var(--secondary-bcg-color);
     color: var(--primary-bcg-color);
+    
 }
 .hero-title{
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
     
     
     font-weight: 900;
@@ -97,6 +149,10 @@ body{
     color: var(--primary-bcg-color);
 }
 .primary-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -113,7 +169,24 @@ body{
 
 /*----strong parts----*/
 
+.strong-container{
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    justify-content: space-between;
+
+}
+/*calc()*/
+.strong-list{
+    width: calc((100% - 30px * 3)/4);
+    background-color: white;
+}
+.strong-list:last-child{
+    /*margin-right: 0;*/
+}
 .strong-part-title{
+    margin-bottom: 10px;
     
     font-size: 14px;
     line-height: 1.14;
@@ -133,7 +206,19 @@ body{
 
 /*----Examples of our work----*/
 
+
+
 /*----title for work and team----*/
+.work-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+
+}
+.work-list{
+    display: flex;
+    justify-content: space-between;
+}
 .title{
     
     font-size: 36px;
@@ -143,16 +228,36 @@ body{
 
     color: var(--primary-title-color);
 }
+
 .work-list, .team-list, .adres-list, .btn-list, .project-list, .list, .strong-list{
     list-style: none;
 }
 
 /*----Our team----*/
 
+.team-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team .title{
+    margin-bottom: 50px;
+}
 .team{
     background-color: var(--item-color);
 }
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+.container-card-team{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-photo{
+    display: block;
+}
 .name-list{
+    margin-bottom: 10px;
     
     font-weight: 500;
     font-size: 16px;
@@ -176,14 +281,24 @@ body{
 }
 .card-worker{
     background-color: var(--primary-bcg-color);
+    width: calc((100% - 30px * 3) / 4);
+    outline: 1px solid green;
+    background-color: teal;
 }
 
 /*--------FOOTER--------*/
 
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .low-part{
     background-color: var(--secondary-bcg-color);
 }
 .logo-footer{
+    display: block;
+    margin-bottom: 20px;
+
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.19;
@@ -197,7 +312,6 @@ body{
     color: var(--primary-bcg-color);
 }
 .adres-map{
-    
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
@@ -205,9 +319,12 @@ body{
 
     color: var(--primary-bcg-color);
 }
-
+.adres-map{
+    margin-bottom: 9px;
+} 
 .contact-footer{
-    
+
+
     font-style: normal;
     text-decoration: none;
     font-weight: 400;
@@ -217,6 +334,9 @@ body{
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+}
+.first-contact{
+    margin-bottom: 9px;
 }
 .contact-footer:hover, .contact-footer:focus{
     color: var(--accent-color);
