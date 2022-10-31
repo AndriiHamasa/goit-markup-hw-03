@@ -12,6 +12,7 @@ body {
   --logo-black-color: #000000;
   --primary-bcg-color: #ffffff;
   --secondary-bcg-color: #2f303a;
+  --card-set-gap: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -393,11 +394,18 @@ ul {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 30px * 2) / 3);
-  justify-content: space-between;
+  /*flex-basis: calc((100% - 30px * 2) / 3);*/
+  /*justify-content: space-between;*/
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
-.project-element:not(:nth-child(n + 7)){
+/*.project-element:not(:nth-child(n + 7)){
     margin-bottom: 30px;
+}*/
+.project-element{
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
 .project-link {
   display: block;
