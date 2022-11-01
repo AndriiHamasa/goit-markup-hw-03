@@ -61,7 +61,6 @@ ul {
 .nav-header {
   display: flex;
   align-items: baseline;
-  
 }
 .logo-header {
   color: var(--accent-color);
@@ -79,16 +78,15 @@ ul {
 .logo-span {
   color: var(--logo-black-color);
 }
-.list{
-    display: flex;
-    gap: 50px;
+.list {
+  display: flex;
+  gap: 50px;
 
-    margin: 0;
+  margin: 0;
 }
 
-.list-cnct-header{
-    
-    margin-left: auto;
+.list-cnct-header {
+  margin-left: auto;
 }
 .header-item {
   padding-top: 32px;
@@ -290,6 +288,8 @@ ul {
 .card-worker {
   background-color: var(--primary-bcg-color);
   width: calc((100% - 30px * 3) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*--------FOOTER--------*/
@@ -402,7 +402,7 @@ ul {
 /*.project-element:not(:nth-child(n + 7)){
     margin-bottom: 30px;
 }*/
-.project-element{
+.project-element {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
